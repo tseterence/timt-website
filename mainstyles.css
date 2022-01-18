@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Space+Grotesk&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,11 +7,13 @@
     background-color: white;
     color: black;
     font-family: "Space Grotesk", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
+    text-align: center;
 }
 
-a, span {
+.navlink {
+    font-size: 30px;
     text-decoration: none;
     background-color: transparent;
 }
@@ -22,23 +24,97 @@ a, span {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    position: fixed;
+    width: 100%;
     background-color: transparent;
+    z-index: 2;
 }
 
 .topnav {
-    position: fixed;
     top: 0;
-    width: 100%;
 }
 
 .bottomnav {
-    position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 .main {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Hide the images by default */
+  .mySlides {
+    display: none;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    padding: 5px;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 46%;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+    left: 46%;
+}
+
+img.projectimage {
+    width: 90%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+} */
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
     text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }

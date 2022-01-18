@@ -5,21 +5,48 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TT PROJECTS</title>
+        <link rel="icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="./mainstyles.css">
     </head>
 
     <body>
         <div class="topnav">
-            <span>Timothy T</span>
-            <a href="./pages/proj.html">Projects</a>
+            <span class="navlink">Timothy T</span>
+            <a class="navlink" href="./pages/proj.html">Projects</a>
         </div>
 
         <div class="bottomnav">
-            <a href="./pages/info.html">Information</a>
-            <a href="./pages/cont.html">Contact</a>
+            <a class="navlink" href="./pages/info.html">Information</a>
+            <a class="navlink" href="./pages/cont.html">Contact</a>
         </div>
 
         <div class="main">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class="projectimage" src="./images/img1.jpg" alt="">
+                    <div class="text">Caption One</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="projectimage" src="./images/img2.jpg" alt="">
+                    <div class="text">Caption Two</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="projectimage" src="./images/img3.jpg" style="">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="projectimage" src="./images/img4.jpg" style="">
+                    <div class="text">Caption Four</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class="projectimage" src="./images/img5.jpg" style="">
+                    <div class="text">Caption Five</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#129120;</a>
+                <a class="next" onclick="plusSlides(1)">&#129122;</a>
+            </div>
+
             <p>Some text some text some text some text..</p>
             <p>Some text some text some text some text..</p>
             <p>Some text some text some text some text..</p>
@@ -51,5 +78,29 @@
             <p>Some text some text some text some text..</p>
             <p>Some text some text some text some text..</p>
         </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slides[slideIndex-1].style.display = "block";  
+            }
+        </script>
     </body>
 </html>

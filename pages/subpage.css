@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Space+Grotesk&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,11 +7,12 @@
     background-color: white;
     color: black;
     font-family: "Space Grotesk", sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
 }
 
-a {
+.navlink {
+    font-size: 30px;
     text-decoration: none;
     background-color: transparent;
 }
@@ -22,19 +23,17 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    position: fixed;
+    width: 100%;
     background-color: transparent;
 }
 
 .topnav {
-    position: fixed;
     top: 0;
-    width: 100%;
 }
 
 .bottomnav {
-    position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 .main {
