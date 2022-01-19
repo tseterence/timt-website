@@ -15,6 +15,7 @@
 .navlink {
     font-size: 30px;
     text-decoration: none;
+    color: black;
     background-color: transparent;
 }
 
@@ -39,8 +40,8 @@
 }
 
 .main {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
 
 
@@ -52,7 +53,7 @@
 }
   
 /* Hide the images by default */
-  .mySlides {
+  .mySlides1, .mySlides2 {
     display: none;
 }
   
@@ -72,16 +73,16 @@
   
 /* Position the "next button" to the right */
 .next {
-    right: 46%;
+    right: 45%;
 }
 
 /* Position the "previous button" to the left */
 .prev {
-    left: 46%;
+    left: 45%;
 }
 
 img.projectimage {
-    width: 90%;
+    width: 80%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -91,12 +92,11 @@ img.projectimage {
   
 /* Caption text */
 .text {
-    color: #f2f2f2;
+    color: black;
     background-color: transparent;
     font-size: 20px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 30px;
     width: 100%;
     text-align: center;
 }
@@ -117,4 +117,8 @@ img.projectimage {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.slideshow-container {
+    margin-bottom: 100px;
 }
