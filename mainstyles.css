@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Space+Grotesk:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -19,6 +19,10 @@
     background-color: transparent;
 }
 
+.navlink:hover {
+    color: grey;
+}
+
 .topnav, .bottomnav {
     overflow: hidden;
     display: flex;
@@ -37,6 +41,10 @@
 
 .bottomnav {
     bottom: 0;
+}
+
+.current {
+    font-weight: bold;
 }
 
 .main {
