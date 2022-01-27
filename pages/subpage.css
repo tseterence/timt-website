@@ -15,11 +15,12 @@
     font-size: 30px;
     text-decoration: none;
     background-color: transparent;
+    padding: 10px;
 }
 
-.navlink:hover {
+/*.navlink:hover {
     color: grey;
-}
+}*/
 
 .topnav, .bottomnav {
     overflow: hidden;
@@ -41,11 +42,27 @@
 }
 
 .main {
-    max-width: 50%;
-    margin: 15% auto;
+    max-width: 55%;
+    margin: 100px auto 60px;
     text-align: center;
 }
 
 .current {
+    border-style: solid;
+}
+
+p {
+    padding: 4px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
     font-weight: bold;
+}
+
+td {
+    text-align: left;
 }

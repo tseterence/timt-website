@@ -17,11 +17,12 @@
     text-decoration: none;
     color: black;
     background-color: transparent;
+    padding: 10px;
 }
 
-.navlink:hover {
+/*.navlink:hover {
     color: grey;
-}
+}*/
 
 .topnav, .bottomnav {
     overflow: hidden;
@@ -44,7 +45,7 @@
 }
 
 .current {
-    font-weight: bold;
+    border-style: solid;
 }
 
 .main {
