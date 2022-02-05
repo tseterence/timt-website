@@ -24,7 +24,7 @@
     color: grey;
 }*/
 
-.topnav, .bottomnav {
+header, footer {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -36,11 +36,11 @@
     z-index: 2;
 }
 
-.topnav {
+header {
     top: 0;
 }
 
-.bottomnav {
+footer {
     bottom: 0;
 }
 

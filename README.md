@@ -4,7 +4,6 @@
 - projects table: no space between rows; only 1 empty space between table header and content
 - show only two columns in Projects page for mobile (proj & year)
 - contact page: 1 empty space between each line. no space between email and phone#
-- 
 - gzip?
 - minify CSS/JS code?
 
