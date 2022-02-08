@@ -45,7 +45,7 @@ footer {
 }
 
 .current {
-    border-style: solid;
+    border: 3px solid black;
 }
 
 .main {

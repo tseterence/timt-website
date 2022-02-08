@@ -1,11 +1,13 @@
 # timt-website
 
 2/4/22 Notes:
-- projects table: no space between rows; only 1 empty space between table header and content
-- show only two columns in Projects page for mobile (proj & year)
+- projects table: no space between rows; only 1 empty space between table header and content. clickable link on project row. sort function by header.
+- show only two columns in Projects page for mobile (proj & year): 
+https://phppot.com/css/automatic-column-hiding-using-css-in-responsive-table/
 - contact page: 1 empty space between each line. no space between email and phone#
 - gzip?
 - minify CSS/JS code?
+- images courtesy of ____ & ____
 
 
 1/21/22 notes:
