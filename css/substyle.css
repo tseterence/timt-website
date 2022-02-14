@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* Note: 62.5% of default web browser font 16px = 10px = 1rem */
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.navlink {
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+/*.navlink:hover {
+    color: grey;
+}*/
+
+header, footer {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+}
+
+header {
+    top: 0;
+    padding: 20px 20px 0 20px;
+}
+
+footer {
+    bottom: 0;
+    padding: 0 20px 20px 20px;
+}
+
+.current {
+    border: 3px solid black;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    /* margin: 100px auto 60px;
+    text-align: center;
+    line-height: 2em; */
+}
+
+.slideshow-container {
+    height: 550px;
+    position: relative;
+    background: gold;
+    margin: 100px auto;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 550px;
+    background: gray;
+    object-fit: contain;
+}
+
+/* p {
+    padding: 1em 0;
+} */
+
+th, td {
+    font-size: 1.5rem;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+th {
+    padding-bottom: 10px;
+}
+
+tr a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+tr a:hover {
+    color: grey;
+}
+
+.information-content, .contact-content {
+    margin-top: 200px;
+}
+
+.project-description {
+    width: 60%;
+    text-align: left;
+    margin: 0 auto 80px;
+}
+
+.project-description p {
+    text-align: left;
+}
+
+.project-table {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.project-table td:nth-of-type(1), .project-table th:nth-of-type(1) {
+    width: calc((100% / 10) * 4);
+}
+
+.project-table td:nth-of-type(2), .project-table th:nth-of-type(2) {
+    width: calc((100% / 10) * 2);
+}
+
+.project-table td:nth-of-type(3), .project-table th:nth-of-type(3) {
+    width: calc((100% / 10) * 1.5);
+}
+
+.project-table td:nth-of-type(4), .project-table th:nth-of-type(4) {
+    width: calc((100% / 10) * 1.5);
+}
+
+.project-table td:nth-of-type(5), .project-table th:nth-of-type(5) {
+    width: calc((100% / 10) * 1);
+}
+
+
+.project-table th, .project-table td {
+    padding-right: 20px
+}
+
+
+@media screen and (max-width: 950px) {
+    th:nth-child(2), th:nth-child(3), th:nth-child(4) {
+        display: none;
+    }
+    td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1150px) {
+    th:nth-child(3), th:nth-child(4) {
+        display: none;
+    }
+    td:nth-child(3), td:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (min-width: 1151px) and (max-width: 1350px) {
+    th:nth-child(4) {
+        display: none;
+    }
+    td:nth-child(4) {
+        display: none;
+    }
+}

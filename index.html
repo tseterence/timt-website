@@ -2,73 +2,55 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TT PROJECTS</title>
         <link rel="icon" href="./images/favicon.ico">
-        <link rel="stylesheet" href="./mainstyles.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/mainstyle.css">
     </head>
 
     <body>
         <header>
             <a class="navlink current" href="#top">Timothy T</span>
-            <a class="navlink" href="./pages/proj.html">Projects</a>
+            <a class="navlink" href="./html/proj.html">Projects</a>
         </header>
 
         <footer>
-            <a class="navlink" href="./pages/info.html">Information</a>
-            <a class="navlink" href="./pages/cont.html">Contact</a>
+            <a class="navlink" href="./html/info.html">Information</a>
+            <a class="navlink" href="./html/cont.html">Contact</a>
         </footer>
 
-        <div class="main">
-            <div class="slideshow-container">
-                <div class="mySlides1">
-                    <img class="projectimage" src="./images/img1.jpg" alt="">
-                </div>
-                <div class="mySlides1">
-                    <img class="projectimage" src="./images/img2.jpg" alt="">
-                </div>
-                <div class="mySlides1">
-                    <img class="projectimage" src="./images/img3.jpg" alt="">
-                </div>
-                <div class="mySlides1">
-                    <img class="projectimage" src="./images/img4.jpg" alt="">
-                </div>
-                <div class="mySlides1">
-                    <img class="projectimage" src="./images/img5.jpg" alt="">
-                </div>
-                <div class="mySlides1">
-                    <img class="projectimage" src="./images/imgvert.jpg" alt="">
-                </div>
+        <main>
+            <section class="slideshow-container">
+                <img class="mySlides1" src="./images/img1.jpg" alt="">
+                <img class="mySlides1" src="./images/img2.jpg" alt="">
+                <img class="mySlides1" src="./images/img3.jpg" alt="">
+                <img class="mySlides1" src="./images/img4.jpg" alt="">
+                <img class="mySlides1" src="./images/img5.jpg" alt="">
+                <img class="mySlides1" src="./images/imgvert.jpg" alt="">
+            
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 
-                <div class="text">Some caption here - link to individual project page</div>
+                <!-- <a class="prev" onclick="plusSlides(-1, 0)">&#129120;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#129122;</a> -->
 
-                <a class="prev" onclick="plusSlides(-1, 0)">&#129120;</a>
-                <a class="next" onclick="plusSlides(1, 0)">&#129122;</a>
-            </div>
+                <p><a href="./html/ampt.html">Ala Moana Plaza Tower</a></p>
+            </section>
 
-            <div class="slideshow-container">
-                <div class="mySlides2">
-                    <img class="projectimage" src="./images/img1.jpg" alt="">
-                </div>
-                <div class="mySlides2">
-                    <img class="projectimage" src="./images/img2.jpg" alt="">
-                </div>
-                <div class="mySlides2">
-                    <img class="projectimage" src="./images/img3.jpg" alt="">
-                </div>
-                <div class="mySlides2">
-                    <img class="projectimage" src="./images/img4.jpg" alt="">
-                </div>
-                <div class="mySlides2">
-                    <img class="projectimage" src="./images/img5.jpg" alt="">
-                </div>
-
-                <div class="text">Some caption here</div>
+            <section class="slideshow-container">
+                    <img class="mySlides2" src="./images/img1.jpg" alt="">
+                    <img class="mySlides2" src="./images/img2.jpg" alt="">
+                    <img class="mySlides2" src="./images/img3.jpg" alt="">
+                    <img class="mySlides2" src="./images/img4.jpg" alt="">
+                    <img class="mySlides2" src="./images/img5.jpg" alt="">
 
                 <a class="prev" onclick="plusSlides(-1, 1)">&#129120;</a>
                 <a class="next" onclick="plusSlides(1, 1)">&#129122;</a>
-            </div>
+
+                <p><a href="./html/ampt.html">Ala Moana Plaza Tower</a></p>
+            </section>
             
 
             <p>Some text some text some text some text..</p>
@@ -101,55 +83,8 @@
             <p>Some text some text some text some text..</p>
             <p>Some text some text some text some text..</p>
             <p>Some text some text some text some text..</p>
-        </div>
-         
-        <script>
-            /*
-            var slideIndex = [1, 1];
-            var slideId = ["mySlides1", "mySlides2"]
-            showSlides(1, 0);
-            showSlides(1, 1);
+        </main>
 
-            function plusSlides(n, no) {
-                showSlides(slideIndex[no] += n, no);
-            }
-            
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("slideId[no]");
-                if (n > slides.length) {slideIndex[no] = 1}    
-                if (n < 1) {slideIndex[no] = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                slides[slideIndex[no] - 1].style.display = "block";  
-            } 
-            */
-
-            var slideIndex = [1,1];
-            var slideId = ["mySlides1", "mySlides2"];
-            showSlides(1, 0);
-            showSlides(1, 1);
-
-            function plusSlides(n, no) {
-                showSlides(slideIndex[no] += n, no);
-            }
-
-            function showSlides(n, no) {
-                var i;
-                var x = document.getElementsByClassName(slideId[no]);
-                if (n > x.length) {slideIndex[no] = 1}    
-                if (n < 1) {slideIndex[no] = x.length}
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none"; 
-                }
-                x[slideIndex[no]-1].style.display = "block";  
-            }
-
-        </script>
+        <script type="text/javascript" src="./js/main.js"></script>
     </body>
 </html>
