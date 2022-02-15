@@ -3,7 +3,7 @@
 - mobile-related:
     - slideshow not smooth on mobile when width = 100%
     - landscape responsiveness
-    - idea: home and indiv proj page on mobile like instagram feed, followed by description (latter)
+    - idea: home and indiv proj page on mobile like instagram feed, followed by description (latter). swipe between images function on mobile. full-screen view of image only for desktop (> 900 px?) since mobile already offers ability to pinch and zoom.
     - //decrease top margin in html pages
     - //increase project table width
     - //set z-index for header/footer in html pages
