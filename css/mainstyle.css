@@ -1,32 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
-/* Note: 62.5% of default web browser font 16px = 10px = 1rem */
-html {
-    font-size: 62.5%;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
-    color: black;
+}
+
+/* Note: 62.5% of default web browser font 16px = 10px = 1rem */
+html {
     font-family: 'Work Sans', sans-serif;
-    font-size: 2rem;
+    background: white;
+    color: black;
+    font-size: 62.5%;
     font-weight: 400;
     text-align: center;
 }
 
-.navlink {
-    font-size: 3rem;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
+body {
+    font-size: 2rem;
 }
 
-/*.navlink:hover {
-    color: grey;
-}*/
+a, a:visited {
+    color: black;
+    background: transparent;
+    text-decoration: none;
+}
 
 header, footer {
     overflow: hidden;
@@ -49,8 +47,18 @@ footer {
     padding: 0 20px 20px 20px;
 }
 
-.current {
+.navlink {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+a.navlink.current {
     border: 3px solid black;
+}
+
+main {
+    width: 75%;
+    margin: 0 auto;
 }
 
 /* Slideshow container */
@@ -69,7 +77,7 @@ footer {
 }
   
 /* Hide the images by default */
-  .mySlides1, .mySlides2 {
+.mySlides1, .mySlides2 {
     display: none;
 }
   
